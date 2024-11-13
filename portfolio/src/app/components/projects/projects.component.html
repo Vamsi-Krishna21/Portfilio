@@ -1,0 +1,13 @@
+<section>
+    <h2>Projects</h2>
+    <div class="card" *ngFor="let project of projects">
+      <div class="card-body">
+        <h5>{{ project.name }}</h5>
+        <p><strong>Tech Stack:</strong> {{ project.techStack }}</p>
+        <ul>
+          <li *ngFor="let detail of project.description">{{ detail }}</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
