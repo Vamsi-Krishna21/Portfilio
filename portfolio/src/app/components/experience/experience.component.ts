@@ -22,7 +22,12 @@ export class ExperienceComponent {
         'Optimized application performance through code reviews and refactoring.',
         'Implemented responsive design for compatibility across devices.',
         'Participated in Agile and Scrum processes.'
-      ]
+      ],
+      expanded: false
     }
   ];
+
+  toggleCollapse(index: number) {
+    this.experiences[index].expanded = !this.experiences[index].expanded;
+  }
 }
